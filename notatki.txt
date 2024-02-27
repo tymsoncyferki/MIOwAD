@@ -1,0 +1,14 @@
+ocenianie: kryteria + zakres/różnorodność eksperymentów
+znormalizować -> nauczyć -> odnormalizować -> liczyć MSE
+nie tworzyć dużych sieci
+numpy, einops
+nnanddl.com
+
+zad 1
+5 neuronów działa -> w większych architekturach zerowanie pozostałych neronów 
+wysokie wagi, dodawanie funkcji sigmoidalnych
+
+dane wielowymiarowe
+X e R(n x 2)
+W1 e R(2 x 3) przechodzimy z dwóch do trzech neuronów
+
