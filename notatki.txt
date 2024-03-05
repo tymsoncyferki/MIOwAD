@@ -12,3 +12,9 @@ dane wielowymiarowe
 X e R(n x 2)
 W1 e R(2 x 3) przechodzimy z dwóch do trzech neuronów
 
+wykres batchowy, różne rozmiary, dla każdego zbioru (mse od liczby epok)
+eksperymenty w zależności od kroku uczenia, inicjalizacji
+
+znaleźć wagi spełniające progi punktowe
+
+np.einsum
