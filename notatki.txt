@@ -4,7 +4,8 @@ nie tworzyć dużych sieci
 numpy, einops
 nnanddl.com
 
-zad 1
+NN1
+-----
 5 neuronów działa -> w większych architekturach zerowanie pozostałych neronów 
 wysokie wagi, dodawanie funkcji sigmoidalnych
 
@@ -12,9 +13,34 @@ dane wielowymiarowe
 X e R(n x 2)
 W1 e R(2 x 3) przechodzimy z dwóch do trzech neuronów
 
+
+NN2
+-----
 wykres batchowy, różne rozmiary, dla każdego zbioru (mse od liczby epok)
 eksperymenty w zależności od kroku uczenia, inicjalizacji
-
 znaleźć wagi spełniające progi punktowe
 
-np.einsum
+
+NN3
+-----
+wcześniej:
+p = p - lambda * dc/dp
+
+z momentem: 
+v(t) = v(t-1) + a * dc/dp  (dostęp w kolejnych iteracjach)
+p = p - lambda * v(t)
+
+rmsProp:
+MS(p,t) = alfa*MS(p, t-1) + (1-alfa)*(dc/dp)^2
+interpretacja - alfa mówi ile będziemy wykorzystywać z wcześniej, a ile z nowo obliczonych
+p = p - lambda (1 / sqrt(MS(p,t) + e)) * dc/dp (dc/dp już uśrednione w danym batchu)
+mały krok uczenia
+
+wykres:
+oś x - batche
+oś y - mse
+linia dla backpropgacji, momentu, rmsprop
+taki wykres dla każdego zbioru danych
+
+threshold dla któregokolwiek typu zbieżności
+
