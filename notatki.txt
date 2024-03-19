@@ -44,3 +44,20 @@ taki wykres dla każdego zbioru danych
 
 threshold dla któregokolwiek typu zbieżności
 
+NN4
+-----
+liczba klas - liczba neuronów wyjściowych
+wartość neuronu to p-stwo przynależności do danej klasy
+
+funkcja softmax:
+S(z) nalezy do (0,1)
+suma(S(z_j)) = 1
+
+cross-entropy loss
+C(s,p) = -suma( p_i * log(s_i) ) 
+
+w przypadku 2 klas i one hot encodingu p to jest [1 0] lub [0 1]
+
+zdjecie tablicy -_-
+
+implementacja f-score (wybrac sposob usredniania)
