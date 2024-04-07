@@ -61,3 +61,42 @@ w przypadku 2 klas i one hot encodingu p to jest [1 0] lub [0 1]
 zdjecie tablicy -_-
 
 implementacja f-score (wybrac sposob usredniania)
+
+NN5
+-----
+liniowa:
+nie nadaje się
+
+sigmoid:
+(0,1)
+max(f'(x)) = 0.25
+
+tanh:
+f(x) = tanh(x) = 2*sigmoid(2x)-1
+(-1, 1)
+f'(x) = 1 - tanh^2(x)
+max(f'(x)) = 1
+
+relu:
+f(x) = 0 (x<=0) , x (x>0) = max(0,x)
+f'(x) = 0 (x<=0) , 1 (x>0) = max(0, sign(x)) ??
+
+eksperymentować z aktywacjami na ukrytych warstwach
+(ostatnią funkcję aktywacji dobrać do problemu który rozwiązujemy)
+
+testować architektury, zmieniamy liczbę warstw (chcemy wykryc problem zanikajcego gradientu)
+
+wykresy dla każego typu architektury (1,2,3 warstwy) i dla każdego zbioru 
+- funkcja kosztu od liczby epok
+- po jednej linii typu aktywacji
+- uśrednić linie + przedział ufności
+
+RAPORT
+-----
+podział na labki
+jakie eksperymenty, wyniki, wykresy
+analiza - co wyszło z eksperymentów, wnioski
+
+wszystkie wyniki, konfiguracje
+
+batch_size = eksperyment z klasyfikacją easy i batch_size = 1
