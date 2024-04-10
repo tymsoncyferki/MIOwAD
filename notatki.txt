@@ -91,6 +91,24 @@ wykresy dla każego typu architektury (1,2,3 warstwy) i dla każdego zbioru
 - po jednej linii typu aktywacji
 - uśrednić linie + przedział ufności
 
+NN6:
+-----
+early stopping na walidacyjnym
+- train, test, val
+jak w ciągu kilku epok funkcja kosztu przestaje maleć na zbiorze walidajnym, to przerwać i wziąć wagi z przed tych kilku epok. potem jeszcze wytestować na testowym.
+
+regularyzacja L2 funkcji kosztu
+C' = C + lambda * 1/(2n) * ||w||^2
+lambda e [0,1], najpierw wytestować 0.1, 0.01, 0.001
+
+dla regularyzacji nowe równanka
+(nowy gradient dla wag: dodajemy lambda/n * w_l)
+
+dany model bez regularyzacji i z regularyzacją
+dany model bez early stopping i z
+porównać wyniki
+wykres wag w czasie z regularyzacją i bez
+
 RAPORT
 -----
 podział na labki
@@ -100,3 +118,7 @@ analiza - co wyszło z eksperymentów, wnioski
 wszystkie wyniki, konfiguracje
 
 batch_size = eksperyment z klasyfikacją easy i batch_size = 1
+
+ostateczne osiągnięte wyniki
+
+zip z kodem nn6 + raport
