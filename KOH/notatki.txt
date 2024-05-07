@@ -20,6 +20,14 @@ sprawdzić różne wartości K, niech C - liczba klas
 
 funkcja przyciągania: wziąć e^(-t/lambda) zamiast e^(-t lambda) 
 
+KOH 2:
+najlepsza topologia
+potem najlepsza funkcja sąsiedztwa
+i na tym eksperymenty z K i C
+
+zrobić początkową siatkę na rozstawioną równo na podstawie danych
+liczyć dystans na indeksach, nie wagach
+
 szerokość sąsiedztwa r 
 
 kolos 
