@@ -31,3 +31,23 @@ deski pionowo albo poziomo
 x, y, wartosc
 
 wizualizacja najlepszego ułożenia
+
+AE3:
+
+każdy osobnik to sieć MLP z tą samą architekturą
+
+krzyżowanie:
+- połowa warstwy z jednego połowa z drugiego
+- jedna warstwa z jednego, jedna z drugiego
+
+mutacja:
+- aktualizacja wag, np. dodaje losową liczbę
+
+ewaluacja:
+- zbiór testowy
+- przepuszczamy przez sieć
+- liczymy funkcje kosztu / accuracy
+
+wnioski:
+co szybsze?
+co łatwiejsze?
