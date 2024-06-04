@@ -1,0 +1,60 @@
+AE1:
+
+X e R^d
+f: X -> R - funkcja celu
+znalezienie minimum
+
+inicjalizacja - 
+
+rozmiar populacji - hiperparametr, po modyfikacjach chcemy wrócić do tej samej liczby np 10, 50, 100
+
+krzyżowanie - łączenie losowo wybranych osobników, robimy jednopunktowe
+
+mutacja - rozkład gaussa z którego próbkujemy zmiany do x y z np. x = x + dx gdzie dx ~ N(0,1) 
+ze stałym prawdopobienstwem
+
+ewaluacja - policzenie funkcji kosztu na osobnikach
+
+selekcja - ktore osobniki przechodzą dalej, wybor najlepszego rozwiazania
+
+(zakładając że chcemy np maksymalnie N razy policzyć funkcję kosztu: )
+im mniejsza populacja, tym więcej iteracji można robić
+im większa populacja, tym mniej iteracji
+
+AE2:
+
+opisać wszystkie kroki
+
+warunek stopu -> próg punktowy albo koszt iteracji
+
+inicjalizacja która jakoś to upycha np. greedy or sth
+
+reprezentacja problemu, jak potem zaimplementowac operacje?
+lista, koordynaty prostokątów (lewy górny róg, wysokość, szerokość)
+
+krzyzowanie ala punktowe (część z jednego i drugiego?)
+mutacje - przesuwanie, odwracanie, dodawanie/usuwanie prostokątów
+deski pionowo albo poziomo
+x, y, wartosc
+
+wizualizacja najlepszego ułożenia
+
+AE3:
+
+każdy osobnik to sieć MLP z tą samą architekturą
+
+krzyżowanie:
+- połowa warstwy z jednego połowa z drugiego
+- jedna warstwa z jednego, jedna z drugiego
+
+mutacja:
+- aktualizacja wag, np. dodaje losową liczbę
+
+ewaluacja:
+- zbiór testowy
+- przepuszczamy przez sieć
+- liczymy funkcje kosztu / accuracy
+
+wnioski:
+co szybsze?
+co łatwiejsze?
