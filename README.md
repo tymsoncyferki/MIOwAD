@@ -1,1 +1,1 @@
-if you are a fellow mini pw student, struggling on miowad course, help yourself with my code
+If you are a fellow MiNI PW student, struggling on MIOwAD course, help yourself with my code! 
